@@ -15,3 +15,35 @@ Faça uma classe principal que implemente o método main que deverá instanciar 
 
 */
 
+package poo.lista3.Ex4;
+
+public class Main {
+    
+    public static void main(String[] args) {
+     
+     System.out.println("Data 1: ");   
+     Data data1 = new Data (15, 04, 1994);
+     System.out.println(data1.primeiroCaso());
+
+     System.out.println("Data 2: ");   
+     Data data4 = new Data (17, 02, 1967);
+     System.out.println(data4.primeiroCaso());
+     
+     System.out.println("Data 3: ");   
+     Data data2 = new Data ("Abril", 8, 1968);
+     System.out.println(data2.segundoCaso());
+     
+     System.out.println("Data 4: "); 
+     Data data5 = new Data ("Outubro", 4, 1991);
+     System.out.println(data5.segundoCaso());
+     
+     System.out.println("Ano: ");   
+     Data data3 = new Data (365, 2022);
+     System.out.println(data3.terceiroCaso());
+     
+     System.out.println("Ano bissexto qualquer: ");   
+     Data data6 = new Data (366, 2008);
+     System.out.println(data6.terceiroCaso());
+
+    }
+}
